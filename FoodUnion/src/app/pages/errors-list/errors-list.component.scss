@@ -1,0 +1,7 @@
+.item {
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 50px;
+  }
+}

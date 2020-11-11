@@ -1,0 +1,19 @@
+<nav>
+  <div class="nav-items">
+      <a class="nav-link"
+        routerLink="/users-list"
+        routerLinkActive="active">
+        <span>Users List</span>
+      </a>
+      <a class="nav-link"
+        routerLink="/errors-list"
+        routerLinkActive="active">
+        <span>Errors List</span>
+      </a>
+  </div>
+
+  <a class="nav-link exit-item"
+    (click)="onExitClick()">
+    <span>Exit</span>
+  </a>
+</nav>
