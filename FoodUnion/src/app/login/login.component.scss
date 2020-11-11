@@ -1,0 +1,35 @@
+@import '../../styles/styles.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  border: 1px solid $light-gray;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: $main-blue;
+}
+
+.mat-form-field {
+  width: 90%;
+}
+
+button {
+  width: 100px;
+}

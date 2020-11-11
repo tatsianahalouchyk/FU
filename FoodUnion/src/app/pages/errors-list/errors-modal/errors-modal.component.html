@@ -1,9 +1,42 @@
-<div>
-  <app-close-btn></app-close-btn>
+<div class="wrapper">
+  <app-close-btn class="close-btn" (closeBtnClick)="onCloseModal($event)"></app-close-btn>
 
-
-  <mat-tab-group mat-align-tabs="start">
-    <mat-tab label="First">Content 1</mat-tab>
-    <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab-group mat-align-tabs="start" class="tab-group">
+    <mat-tab label="E-mail List">
+      <div class="tab-content">
+        <mat-form-field class="example-chip-list">
+          <mat-chip-list #chipList
+            aria-label="E-mail list">
+            <mat-chip *ngFor="let email of emailList"
+              [selectable]="selectable"
+              [removable]="removable"
+              (removed)="remove(email)">
+              {{email.name}}
+              <mat-icon matChipRemove
+                *ngIf="removable">cancel</mat-icon>
+            </mat-chip>
+            <input placeholder="Add new e-mails..."
+              [matChipInputFor]="chipList"
+              [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+              [matChipInputAddOnBlur]="addOnBlur"
+              (matChipInputTokenEnd)="add($event)">
+          </mat-chip-list>
+        </mat-form-field>
+      </div>
+    </mat-tab>
+    <mat-tab label="Message Template">
+      <div class="tab-content">
+        <mat-form-field appearance="outline">
+          <mat-label>Message</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+      </div>
+    </mat-tab>
   </mat-tab-group>
+
+  <footer>
+    <button mat-flat-button
+      color="primary"
+      (click)="onSave()">Save</button>
+  </footer>
 </div>

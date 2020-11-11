@@ -1,1 +1,20 @@
-<button mat-flat-button color="primary" (click)="onClick()">Login</button>
+<div class="wrapper">
+  <div class="login-form">
+    <p class="title">Login Form:</p>
+    <mat-form-field appearance="outline">
+      <mat-label>E-mail</mat-label>
+      <input matInput
+        placeholder="Enter your e-mail">
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput
+        placeholder="Enter your password">
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+
+    <button mat-flat-button color="primary" (click)="onClick()">Login</button>
+  </div>
+</div>

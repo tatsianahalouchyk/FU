@@ -1,7 +1,13 @@
+@import '../../../styles/styles.scss';
+
 .item {
   cursor: pointer;
 
   &:last-child {
     margin-bottom: 50px;
+  }
+
+  &:hover {
+    color: $main-blue;
   }
 }

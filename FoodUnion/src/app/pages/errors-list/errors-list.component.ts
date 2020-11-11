@@ -19,7 +19,6 @@ export class ErrorsListComponent implements OnInit {
   }
 
   onErrorClick() {
-    console.log('onClick');
     const dialogRef = this.dialog.open(ErrorsModalComponent,
       {
         width: '100%',
@@ -32,9 +31,4 @@ export class ErrorsListComponent implements OnInit {
       // console.log(`Dialog result: ${result}`);
     });
   }
-
-  // closeModal() {
-  //   this.dialogRef.close(true);
-  // }
-
 }
