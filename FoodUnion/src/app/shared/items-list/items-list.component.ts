@@ -33,7 +33,9 @@ export class ItemsListComponent implements OnInit {
         item.isChecked = false;
         this.allCheckedItems = this.allCheckedItems.filter(el => el.name !== item.name);
       }
-      this.choosedItem.emit(this.allCheckedItems);
+
+      const arrToEmit = this.allCheckedItems.map(el => el = {name: el.name});
+      this.choosedItem.emit(arrToEmit);
 
     } else {
       this.choosedItem.emit(item);

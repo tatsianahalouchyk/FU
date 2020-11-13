@@ -55,8 +55,8 @@ export class ErrorsListComponent implements OnInit {
   onErrorChoose(error: any) {
     const dialogRef = this.dialog.open(ErrorsModalComponent,
       {
-        width: '100%',
-        height: '50vh',
+        width: '60%',
+        height: '60vh',
         // data: error
       }
     );

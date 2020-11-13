@@ -55,11 +55,10 @@ export class UsersListComponent implements OnInit {
   }
 
   onNewUserAddition() {
-    console.log('onNewUserAddition');
     const dialogRef = this.dialog.open( NewUserModalComponent,
       {
-        width: '100%',
-        height: '50vh',
+        width: '60%',
+        height: '60vh',
       }
     );
 

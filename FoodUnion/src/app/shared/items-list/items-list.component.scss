@@ -20,7 +20,7 @@
   display: block;
   padding: 0.4em 0.4em 0.4em 2em;
   margin: 0.5em 0;
-  background: $beige;
+  background: $list-gray;
   color: $gray;
   text-decoration: none;
   border-radius: 0.3em;
@@ -28,7 +28,7 @@
 }
 
 .rounded a:hover {
-  background: $light-beige;
+  background: $list-light-blue;
 }
 
 .rounded a:hover:before {
@@ -51,6 +51,7 @@
   font-weight: bold;
   border-radius: 2em;
   transition: all 0.3s ease-out;
+  color: $white;
 }
 
 .p-left {
