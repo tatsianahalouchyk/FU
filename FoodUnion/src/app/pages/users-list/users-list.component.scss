@@ -1,0 +1,19 @@
+.wrapper {
+  position: relative;
+  height: 99%;
+  overflow: hidden;
+}
+
+.users-list {
+  height: calc(99% - 40px);
+  overflow-y: scroll;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

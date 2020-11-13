@@ -1,0 +1,8 @@
+<ol class="rounded">
+  <li *ngFor="let item of itemsListWithCheckPossibility; let i = index">
+    <input *ngIf="isCheckAvail" class="checkbox" type="checkbox" [checked]="item.isChecked" (click)="onItemClick(item, i)" />
+    <a [ngClass]="{'p-left': isCheckAvail}" (click)="onItemClick(item, i)">
+      {{ item.name }}
+    </a>
+  </li>
+</ol>

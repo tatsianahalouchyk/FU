@@ -1,1 +1,14 @@
-<p>users-list works!</p>
+<div class="wrapper">
+  <div class="users-list">
+      <app-items-list [itemsList]="usersList"
+        [isCheckAvail]="true"
+        (choosedItem)="onUserChoose($event)"></app-items-list>
+  </div>
+
+  <footer>
+    <button mat-flat-button
+      color="primary"
+      (click)="onNewUserAddition()">Add New User</button>
+  </footer>
+</div>
+

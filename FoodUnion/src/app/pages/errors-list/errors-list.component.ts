@@ -8,22 +8,56 @@ import { ErrorsModalComponent } from './errors-modal/errors-modal.component';
   styleUrls: ['./errors-list.component.scss']
 })
 export class ErrorsListComponent implements OnInit {
+  // TODO update any type:
+  errorsList: any[] = [];
 
   constructor(
     public dialog: MatDialog,
-    // public dialogRef: MatDialogRef<UsersListComponent>,
-    // @Inject(MAT_DIALOG_DATA) public data: any
   ) { }
 
   ngOnInit(): void {
+    this.errorsList = [
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+      { name: 'An error' },
+    ];
   }
 
-  onErrorClick() {
+  // TODO update any type:
+  onErrorChoose(error: any) {
     const dialogRef = this.dialog.open(ErrorsModalComponent,
       {
         width: '100%',
-        height: '90vh',
-        // data: this.data
+        height: '50vh',
+        // data: error
       }
     );
 

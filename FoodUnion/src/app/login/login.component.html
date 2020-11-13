@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <div class="login-form">
+  <div *ngIf="!isLoading" class="login-form">
     <p class="title">Login Form:</p>
     <mat-form-field appearance="outline">
       <mat-label>E-mail</mat-label>
@@ -17,4 +17,5 @@
 
     <button mat-flat-button color="primary" (click)="onClick()">Login</button>
   </div>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
 </div>

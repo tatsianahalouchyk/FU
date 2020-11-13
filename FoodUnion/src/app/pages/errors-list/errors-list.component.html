@@ -1,24 +1,8 @@
 <div class="wrap">
-  <p class="item" (click)="onErrorClick()">An error #1</p>
-  <p class="item" (click)="onErrorClick()">An error #2</p>
-  <p class="item" (click)="onErrorClick()">An error #3</p>
-  <p class="item" (click)="onErrorClick()">An error #4</p>
-  <p class="item" (click)="onErrorClick()">An error #5</p>
-  <p class="item" (click)="onErrorClick()">An error #6</p>
-  <p class="item" (click)="onErrorClick()">An error #7</p>
-  <p class="item" (click)="onErrorClick()">An error #8</p>
-  <p class="item" (click)="onErrorClick()">An error #9</p>
-  <p class="item" (click)="onErrorClick()">An error #10</p>
-  <p class="item" (click)="onErrorClick()">An error #11</p>
-  <p class="item" (click)="onErrorClick()">An error #12</p>
-  <p class="item" (click)="onErrorClick()">An error #13</p>
-  <p class="item" (click)="onErrorClick()">An error #14</p>
-  <p class="item" (click)="onErrorClick()">An error #15</p>
-  <p class="item" (click)="onErrorClick()">An error #16</p>
-  <p class="item" (click)="onErrorClick()">An error #17</p>
-  <p class="item" (click)="onErrorClick()">An error #18</p>
-  <p class="item" (click)="onErrorClick()">An error #19</p>
-  <p class="item" (click)="onErrorClick()">An error #20</p>
+  <div class="errors-list">
+      <app-items-list [itemsList]="errorsList"
+        (choosedItem)="onErrorChoose($event)"></app-items-list>
+  </div>
 </div>
 
 

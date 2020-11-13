@@ -17,9 +17,10 @@ a {
 }
 
 .nav-link {
-  font-weight: bold;
+  padding: 0 10px;
   color: $white;
-  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
   text-decoration: none;
 
   &:not(:last-child) {
@@ -33,7 +34,8 @@ a {
 }
 
 .active {
-  border-bottom: 2px solid $white;
+  border-right: 2px solid $white;
+  border-left: 2px solid $white;
 }
 
 // .swal-modal {

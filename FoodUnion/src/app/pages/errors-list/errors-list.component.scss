@@ -1,13 +1,11 @@
 @import '../../../styles/styles.scss';
 
-.item {
-  cursor: pointer;
+.wrap {
+  height: 99%;
+  overflow: hidden;
+}
 
-  &:last-child {
-    margin-bottom: 50px;
-  }
-
-  &:hover {
-    color: $main-blue;
-  }
+.errors-list {
+  height: 100%;
+  overflow-y: scroll;
 }
